@@ -2,7 +2,7 @@
 //
 // To parse this JSON data, add NuGet 'Newtonsoft.Json' then do:
 //
-//    using API_with_csharp;
+//    using WindowsRESTapi;
 //
 //    var adat = Adat.FromJson(jsonString);
 

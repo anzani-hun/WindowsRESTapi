@@ -35,9 +35,9 @@ namespace WindowsRESTapi
             // listBox_Adatok
             // 
             this.listBox_Adatok.FormattingEnabled = true;
-            this.listBox_Adatok.Location = new System.Drawing.Point(177, 92);
+            this.listBox_Adatok.Location = new System.Drawing.Point(73, 34);
             this.listBox_Adatok.Name = "listBox_Adatok";
-            this.listBox_Adatok.Size = new System.Drawing.Size(120, 95);
+            this.listBox_Adatok.Size = new System.Drawing.Size(473, 264);
             this.listBox_Adatok.TabIndex = 0;
             // 
             // Form1

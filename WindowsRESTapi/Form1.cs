@@ -26,8 +26,8 @@ namespace WindowsRESTapi
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            restapiAdatok();
-            listBox_Adatok.Items.AddRange(adatok.)
+            restapiAdatok().Wait();
+            listBox_Adatok.Items.AddRange(adatok.ToArray());
 
         }
 
@@ -36,12 +36,13 @@ namespace WindowsRESTapi
             var client = new HttpClient();
             var request = new HttpRequestMessage(HttpMethod.Get, endPointUrl);
             var response = await client.SendAsync(request);
-            response.EnsureSuccessStatusCode();
+            
+            if (response.EnsureSuccessStatusCode)
+            {
+                string jsonString = await response.Content.ReadAsStringAsync();
+                adatok = Adat.FromJson(jsonString).ToList();
+            }
 
-            /*Console.WriteLine(await response.Content.ReadAsStringAsync());*/
-
-            string jsonString = await response.Content.ReadAsStringAsync();
-            adatok = Adat.FromJson(jsonString).ToList();
         }
 
     }
