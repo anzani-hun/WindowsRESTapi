@@ -27,6 +27,7 @@ namespace WindowsRESTapi
         private void Form1_Load(object sender, EventArgs e)
         {
             restapiAdatok();
+            listBox_Adatok.Items.AddRange(adatok.)
 
         }
 
