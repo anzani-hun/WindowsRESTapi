@@ -32,10 +32,13 @@ namespace WindowsRESTapi
             this.listBox_Adatok = new System.Windows.Forms.ListBox();
             this.Azonosito = new System.Windows.Forms.Label();
             this.textBox_id = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox_Name = new System.Windows.Forms.TextBox();
             this.Name = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_fizetes = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button_Create = new System.Windows.Forms.Button();
+            this.button_Update = new System.Windows.Forms.Button();
+            this.button_Delete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox_Adatok
@@ -63,12 +66,12 @@ namespace WindowsRESTapi
             this.textBox_id.Size = new System.Drawing.Size(100, 20);
             this.textBox_id.TabIndex = 2;
             // 
-            // textBox1
+            // textBox_Name
             // 
-            this.textBox1.Location = new System.Drawing.Point(498, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.textBox_Name.Location = new System.Drawing.Point(498, 77);
+            this.textBox_Name.Name = "textBox_Name";
+            this.textBox_Name.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Name.TabIndex = 4;
             // 
             // Name
             // 
@@ -80,30 +83,60 @@ namespace WindowsRESTapi
             this.Name.Text = "Név:";
             this.Name.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox2
+            // textBox_fizetes
             // 
-            this.textBox2.Location = new System.Drawing.Point(498, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.textBox_fizetes.Location = new System.Drawing.Point(498, 118);
+            this.textBox_fizetes.Name = "textBox_fizetes";
+            this.textBox_fizetes.Size = new System.Drawing.Size(100, 20);
+            this.textBox_fizetes.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(399, 118);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Azonositó:";
+            this.label1.Text = "Fizetés:";
+            // 
+            // button_Create
+            // 
+            this.button_Create.Location = new System.Drawing.Point(379, 186);
+            this.button_Create.Name = "button_Create";
+            this.button_Create.Size = new System.Drawing.Size(361, 40);
+            this.button_Create.TabIndex = 7;
+            this.button_Create.Text = "Beszúrás";
+            this.button_Create.UseVisualStyleBackColor = true;
+            // 
+            // button_Update
+            // 
+            this.button_Update.Location = new System.Drawing.Point(379, 245);
+            this.button_Update.Name = "button_Update";
+            this.button_Update.Size = new System.Drawing.Size(361, 40);
+            this.button_Update.TabIndex = 8;
+            this.button_Update.Text = "Módosítás";
+            this.button_Update.UseVisualStyleBackColor = true;
+            // 
+            // button_Delete
+            // 
+            this.button_Delete.Location = new System.Drawing.Point(379, 309);
+            this.button_Delete.Name = "button_Delete";
+            this.button_Delete.Size = new System.Drawing.Size(361, 40);
+            this.button_Delete.TabIndex = 9;
+            this.button_Delete.Text = "Törlés";
+            this.button_Delete.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button_Delete);
+            this.Controls.Add(this.button_Update);
+            this.Controls.Add(this.button_Create);
+            this.Controls.Add(this.textBox_fizetes);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_Name);
             this.Controls.Add(this.Name);
             this.Controls.Add(this.textBox_id);
             this.Controls.Add(this.Azonosito);
@@ -121,10 +154,13 @@ namespace WindowsRESTapi
         private System.Windows.Forms.ListBox listBox_Adatok;
         private System.Windows.Forms.Label Azonosito;
         private System.Windows.Forms.TextBox textBox_id;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox_Name;
         private System.Windows.Forms.Label Name;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_fizetes;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button_Create;
+        private System.Windows.Forms.Button button_Update;
+        private System.Windows.Forms.Button button_Delete;
     }
 }
 
